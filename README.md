@@ -24,7 +24,7 @@ Installation
 ------------
 
 ```sh
-docker pull bdusell/nginx-certbot
+docker pull bdusell/nginx-letsencrypt
 ```
 
 Introduction
