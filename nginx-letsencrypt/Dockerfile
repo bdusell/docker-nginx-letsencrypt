@@ -32,7 +32,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 # Configure supervisord.
 COPY supervisord.conf /etc/supervisord.conf
-COPY watchdog.py /app/watchdog.py
 # Configure cron.
 COPY root /var/spool/cron/crontabs/
 COPY renew-cert.bash /app/renew-cert.bash
