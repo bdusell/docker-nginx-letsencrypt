@@ -6,10 +6,11 @@ WORKDIR /app/
 # - nginx
 # - the BusyBox implementation of cron
 # Install Certbot.
-# See https://certbot.eff.org/#ubuntuxenial-nginx
+# See https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx
 RUN apt-get update && \
     apt-get install --no-install-recommends --no-install-suggests -y \
         software-properties-common && \
+    add-apt-repository universe && \
     add-apt-repository ppa:certbot/certbot && \
     apt-get update && \
 # Also install supervisord to run both nginx and cron simultaneously.
