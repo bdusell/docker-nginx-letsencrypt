@@ -15,6 +15,7 @@ RUN apt-get update && \
     apt-get update && \
 # Also install supervisord to run both nginx and cron simultaneously.
     apt-get install --no-install-recommends --no-install-suggests -y \
+        certbot \
         python-certbot-nginx \
         supervisor=3.* \
         nginx=1.* \
